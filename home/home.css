@@ -10,13 +10,14 @@
 body {
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
+    padding-top: 110px;
     justify-content: left;
     align-items: center;
     min-height: 100vh;
     background: url('http://127.0.0.1:5500/JS/Example-Website/img/abstract_background_2.jpg') no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 header {
@@ -93,7 +94,7 @@ header {
 }
 
 .wrapper:hover {
-    transform: scale(1.01);
+    transform: scale(1.05);
 }
 
 .wrapper .content {

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="Chrome=1">
+    <title>Website</title>
+    <link rel="stylesheet" href="http://127.0.0.1:5500/JS/Example-Website/contact/contact.css">
+</head>
+<body>
+    
+    <header>
+        <h2 class="logo">Contact</h2>
+        <div class="navigation">
+            <a href="http://127.0.0.1:5500/JS/Example-Website/home/home.html">Home</a>
+            <a href="http://127.0.0.1:5500/JS/Example-Website/about/about.html">About</a>
+            <a href="http://127.0.0.1:5500/JS/Example-Website/services/services.html">Services</a>
+            <a href="http://127.0.0.1:5500/JS/Example-Website/contact/contact.html">Contact</a>
+            <a href="http://127.0.0.1:5500/JS/Example-Website/index/index.html"><span>Login<ion-icon name="chevron-forward"></ion-icon></span></a>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="form-box login">
+            <h2>Contact Us</h2>
+            <form action="">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="information"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Name</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="call"></ion-icon></span>
+                    <input type="number" required>
+                    <label>Phone</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="create"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Message</label>
+                </div>
+                <div class="input-box">
+                    <select id="city" name="city" required>
+                        <option value="lhr">Lahore</option>
+                        <option value="isl">Islamabad</option>
+                        <option value="khi">Karachi</option>
+                        <option value="rwp">Rawalpindi</option>
+                        <option value="qt">Quetta</option>
+                    </select>
+                    <span class="icon"><ion-icon name="location"></ion-icon></span>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="http://127.0.0.1:5500/JS/Example-Website/contact/contact.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
