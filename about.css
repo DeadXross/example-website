@@ -10,17 +10,15 @@
 body {
     display: flex;
     padding-top: 110px;
-    padding-left: 100px;
-    padding-right: 100px;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     min-height: 100vh;
-    height: 100%;
-    background: url('http://127.0.0.1:5500/JS/Example-Website/img/abstract_background_4.jpg') no-repeat;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: url('about_background.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    overflow: hidden;
 }
 
 header {
@@ -81,64 +79,98 @@ header {
     vertical-align: middle;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
 .wrapper {
     display: flex;
-    flex-wrap: wrap;
+    height: 100%;
     width: 100%;
-    margin-bottom: 10px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .5);
-    border-color: transparent;
     border-radius: 20px;
-    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-    gap: 10px;
-}
-
-.wrapper .col-md-4 {
-    display: grid;
-    padding: 0;
-    margin: 0 10px;
-    width: 400px;
-}
-
-/* .card.text-center.border.rounded {
-} */
-
-.card-img-top.rounded-circle.mx-auto.d-block {
-    margin-top: 10px;
-}
-
-.card.text-center {
-    color: black;
-    background-color: transparent;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    border: transparent;
-}
-
-.card.text-center:hover {
-    color: white;
-    background-color: transparent;
     backdrop-filter: blur(20px);
-    transform: translateY(-3px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
-.card-img-top.rounded-circle.mx-auto.d-block {
-    border-color: #000;
+.wrapper:hover {
+    transform: scale(1.02);
 }
 
-.card-img-top.rounded-circle.mx-auto.d-block:hover {
-    border-color: white;
+.wrapper .content {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
 }
 
-/* .wrapper:hover {
-    transform: scale(1.05);
-} */
+.wrapper .content h1 {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 2em;
+    font-weight: 800;
+}
 
-/* .container {
+.wrapper .content h1 ion-icon {
+    font-size: 1.1em;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.wrapper .content p {
+    font-size: 1.1em;
+    margin-top: 10px;
+    margin-left: 45px;
+    margin-right: 45px;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .content a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.content {
     width: 100%;
     max-width: 100%;
     overflow-wrap: break-word;
     word-wrap: break-word;
     hyphens: auto;
     text-align: justify;
+}
+
+/* @media screen and (max-width: 1060px) {
+    .wrapper {
+        padding: 15px;
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .wrapper {
+        padding: 15px;
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .wrapper {
+        padding: 15px;
+        font-size: 0.5em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .wrapper {
+        padding: 15px;
+        font-size: 0.4em;
+    }
 } */

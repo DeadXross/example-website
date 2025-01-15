@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('http://127.0.0.1:5500/JS/Example-Website/img/abstract_background_1.jpg') no-repeat;
+    background: url('index_background.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
