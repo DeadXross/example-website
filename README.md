@@ -1,1 +1,1 @@
-Make sure to change the href/url paths, currently it has my IP address and port number. You gotta enter yours.
+The website is not responsive yet, only some of the pages have been fully worked out.
